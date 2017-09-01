@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonitoringActivity" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#333" >
+
+        <TextView
+            android:id="@+id/search_result_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FFF"
+            android:text="@string/search_result_default_string"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_result_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/header"
+        android:background="#AAA" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnShowMap"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Show Location Map" />
+    
+    <TextView
+        android:id="@+id/txtresGeoX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtresGeoY"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:text="X Location"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/txtresGeoY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnShowMap"
+        android:layout_alignParentRight="true"
+        android:text="Y Location"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/extSampleNum"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtresGeoX"
+        android:layout_alignRight="@id/btnShowMap"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/extSampleNum"
+        android:layout_toLeftOf="@+id/extSampleNum"
+        android:text="SampleNums"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+</RelativeLayout>

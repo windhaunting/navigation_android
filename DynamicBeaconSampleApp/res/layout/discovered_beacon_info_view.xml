@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/uuid_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/uuid_label" />
+
+    <TextView
+        android:id="@+id/uuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/uuid_label" />
+
+    <TextView
+        android:id="@+id/major_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/uuid_label"
+        android:text="@string/major_id_label" />
+
+    <TextView
+        android:id="@+id/major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/major_label"
+        android:layout_alignBottom="@+id/major_label"
+        android:layout_toRightOf="@+id/major_label" />
+
+    <TextView
+        android:id="@+id/minor_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/major"
+        android:layout_alignBottom="@+id/major"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/major"
+        android:text="@string/minor_id_label" />
+
+    <TextView
+        android:id="@+id/minor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/minor_label"
+        android:layout_alignBottom="@+id/minor_label"
+        android:layout_toRightOf="@+id/minor_label" />
+
+   
+
+    <TextView
+        android:id="@+id/rssi_reading_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/major_label"
+        android:text="@string/rssi_reading_label" />
+
+    <TextView
+        android:id="@+id/rssi_reading_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rssi_reading_label"
+        android:layout_alignBottom="@+id/rssi_reading_label"
+        android:layout_toRightOf="@+id/rssi_reading_label" />
+
+</RelativeLayout>

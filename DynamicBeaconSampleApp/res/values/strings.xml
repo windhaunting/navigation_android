@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RadBeaconTestingApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_result_default_string">Searching for tag</string>
+    <string name="uuid_label">UUID: </string>
+    <string name="major_id_label">Major: </string>
+    <string name="minor_id_label">Minor: </string>
+    <string name="rssi_reading_label">RSSI: </string>
+    <string name="distance_reading_label">Distance: </string>
+    <string name="beacon_type_gimbal">Gimbal</string>
+    <string name="beacon_type_radbeacon">RadBeacon</string>
+    <string name="beacon_type_estimote">Estimote</string>
+    <string name="welcome_text">WELCOME</string>
+    <string name="welcome_title">Beacon Sample App</string>
+
+</resources>
