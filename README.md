@@ -1,6 +1,6 @@
 Project decription:
 
-we implemented a localization and wayfinding application in in Java for
+We implemented a localization and wayfinding application in in Java for
 android based smart phones and tablets which is used for navigation
 inside the buildings. The localization is based on the data collected from
 some bluetooth low energy tags which are well placed in the first floor
